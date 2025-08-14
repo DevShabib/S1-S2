@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System 1 vs System 2 Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container" id="start-screen">
+    <h1>Welcome to the Thinking Quiz</h1>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div class="container hidden" id="quiz-screen">
+    <h1>Are You a Fast or Slow Thinker?</h1>
+    <p id="question-text"></p>
+    <button id="option1" onclick="choose('system1')"></button>
+    <button id="option2" onclick="choose('system2')"></button>
+  </div>
+
+  <div class="container hidden" id="result-screen">
+    <h2>You are: <span id="your-result"></span></h2>
+    <h3>Live Class Results</h3>
+    <canvas id="resultChart" width="400" height="200"></canvas>
+    <button onclick="restartQuiz()">Retake Quiz</button>
+  </div>
+
+  <script src="chart.umd.js"></script>
+  <script src="script.js"></script> 
+   <script src="
+  https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js
+  "></script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/peerjs@1.5.5/dist/peerjs.min.js
+  "></script>
+
+</body>
+</html>
+
+
